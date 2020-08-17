@@ -1,0 +1,33 @@
+// 1. COLORS
+$primary-color: #DE356B !default;
+$secondary-color: #1976d2 !default;
+//
+$button-color: #D93368 !default;
+$button-text-color: #fff !default;
+//
+$success-color: #4caf50 !default;
+$error-color: #f44336 !default;
+$link-color: $primary-color !default;
+//
+$title-color: #141D2E !default;
+$text-color: #141D2E !default;
+$text-on-dark-color: #fff !default;
+//
+$background-color: #F3F3F3 !default;
+
+// 3. KEYFRAME
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+

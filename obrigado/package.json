@@ -1,0 +1,11 @@
+{
+  "name": "ahgora",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/alanzdr/ahgora-pme.git",
+  "author": "alanzdr <alandersonzelindrodr@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch scss:css --style compressed"
+  }
+}

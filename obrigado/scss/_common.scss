@@ -1,0 +1,43 @@
+@charset "UTF-8";
+//
+@import "./variables";
+
+.container {
+  display: block;
+  width: 80%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: auto;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background .5s ease;
+  &.primary {
+    background: $primary-color;
+    &:hover, &:focus {
+      background: $primary-color-dark;
+    }
+  }
+  &.secondary {
+    background: $secondary-color;
+    &:hover, &:focus {
+      background: $secondary-color-dark;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1000px) { 
+  .container {
+    width: 85%;
+  }
+}

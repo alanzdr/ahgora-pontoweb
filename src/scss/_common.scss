@@ -1,0 +1,28 @@
+@import './variables';
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.6rem;
+  width: max-content;
+  color: $button-text-color;
+  cursor: pointer;
+  border-radius: 5rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  background: $button-color;
+  transition: background .5s ease;
+  text-transform: uppercase;
+  box-shadow: 0 0 3.2rem 0 rgba(241,0,104,0.5);
+  &:hover {
+    background: lighten($button-color, 16%);
+  }
+}
