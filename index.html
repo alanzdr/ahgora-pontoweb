@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
     <meta name="keywords" content="ahgora pontoweb">
     <meta name="robots" content="index, follow" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/index.css?v=1.0" />
     <link
       rel="shortcut icon"
       href="https://ahgora.com/wp-content/uploads/2019/09/cropped-icon-agora-1-32x32.png"
@@ -114,7 +114,7 @@
     <section id="content-what-matters">
       <div class="background-fill"></div>
       <h2>
-        Simplifique a rotina da sua empresa
+        Simplifique a rotina da sua empresa <br />
         <strong>e foque no que importa</strong>
       </h2>
       <div class="content">
@@ -170,7 +170,7 @@
     <section id="content-platforms">
       <h2>
         <strong>Múltiplas formas</strong> de batida de ponto com o
-        <strong>Ahgora Easy</strong>
+        <strong>Ahgora PontoWEB</strong>
       </h2>
       <p class="text desktop">
         Registre batidas de ponto através do navegador, reconhecimento 
@@ -486,12 +486,34 @@
               <input id="phone" name="personal_phone" type="text" required />
             </div>
             <div class="input-controller">
+              <label for="job_title">Cargo*</label>
+              <select
+                name="[PME HOTSITE] Cargo"
+                id="job_title"
+                required
+              >
+                <option>Selecione</option>
+                <option value='CEO'>CEO</option>
+                <option value='Diretor'>Diretor</option>
+                <option value='Assistente de RH'>Assistente de RH</option>
+                <option value='Analista de RH'>Analista de RH</option>
+                <option value='Gerente de RH'>Gerente de RH</option>
+                <option value='Diretor de RH'>Diretor de RH</option>
+                <option value='Analista de TI'>Analista de TI</option>
+                <option value='Gerente de TI'>Gerente de TI</option>
+                <option value='Comercial'>Comercial</option>
+                <option value='Financeiro'>Financeiro</option>
+                <option value='Contador'>Contador</option>
+                <option value='Outros'>Outros</option>
+              </select>
+            </div>
+            <div class="input-controller">
               <label for="company">Empresa*</label>
               <input id="company" name="company" type="text" required />
             </div>
             <div class="input-controller">
-              <label for="job_title">Cargo*</label>
-              <input id="job_title" name="job_title" type="text" required />
+              <label for="cnpj">CNPJ</label>
+              <input id="cnpj" name="CNPJ" type="text" />
             </div>
             <div class="input-controller">
               <label for="employers">Número de Colaboradores*</label>
@@ -517,10 +539,6 @@
                 </option>
               </select>
             </div>
-            <div class="input-controller">
-              <label for="cnpj">CNPJ</label>
-              <input id="cnpj" name="CNPJ" type="text" />
-            </div>
             <button type="submit" class="btn secondary">
               Quero saber mais
               <div class="spinner"></div>
@@ -540,7 +558,7 @@
     </footer>
     <!-- SCRIPTS -->
     <script src="assets/js/tiny-slider.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js?v=1.0"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async

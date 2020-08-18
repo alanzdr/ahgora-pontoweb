@@ -267,17 +267,26 @@ function handleWithPlans() {
     form.querySelector('button').setAttribute('disabled', true);
   } 
 
-  function sendDataToFacebook() {
+  function sendDataEvents() {
+    const eventLabel = is0to20() ? '0 a 20 colaboradores' : 'Acima de 20 colaboradores';
     if ("fbq" in window) {
       fbq('track', 'Lead');
+    }
+    if("ga" in window) {
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'hotsite-pme-pontoweb',
+        eventAction: 'contact',
+        eventLabel
+      });
     }
   }
 
   form.addEventListener('submit', async (ev) => {
     ev.preventDefault();
     unviableForm();
-    sendDataToFacebook();
-    // await sendData();
+    sendDataEvents();
+    await sendData();
     redirectUser();
   })
 
@@ -309,6 +318,11 @@ function handleWithClientsCarousel() {
     swipeAngle: false,
     speed: 400,
     controls: false,
+    autoplayButton: false,
+    autoplayButtonOutput: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
     responsive: {
       600: {
         items: 3

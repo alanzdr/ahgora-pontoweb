@@ -24,6 +24,7 @@
     img {
       object-fit: cover;
       min-width: 100%;
+      height: 100%;
     }
   }
   .content {
@@ -50,6 +51,16 @@
     }
     a.btn {
       margin-top: 5.6rem;
+    }
+  }
+  @media (max-width: 1000px) {
+    align-items: flex-end;
+    padding-bottom: 8rem;
+    .content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
@@ -94,7 +105,7 @@
       border: none;
       background: none;
       position: absolute;
-      top: 90%;
+      top: 50%;
       transform: translateY(-50%);
       display: none;
       &.next-button {
@@ -107,12 +118,22 @@
     }
   }
   @media (max-width: 1000px) {
+    padding-top: 6.4rem;
+    padding-bottom: 12rem;
+    h2 {
+      font-size: 2.4rem;
+    }
     .carousel {
-      .item {
-        opacity: 1;
+      #clients-carousel {
+        .item {
+          opacity: 1;
+        }
       }
       .button {
         display: block;
+      }
+      .tns-nav {
+        bottom: -3.6rem;
       }
     }
   }
@@ -217,14 +238,22 @@
     }
   }
   @media (max-width: 1000px) {
-    padding: 80px 0;
+    // padding: 80px 0;
+    .background-fill {
+      height: 42rem;
+    }
+    h2 {
+      font-size: 2.4rem;
+      max-width: 26.2rem;
+    }
     .content {
-      width: 85%;
-      max-width: 400px;
+      margin-top: 4rem;
+      width: 90%;
+      max-width: 28rem;
       flex-direction: column;
       .item {
         width: 100%;
-        margin: 20px 0;  
+        margin: 0.5rem 0;  
       }
     }
   }
@@ -262,14 +291,14 @@
     justify-content: center;
   }
   @media (max-width: 1000px) {
-    .title {
-      line-height: 32px;
+    h2 {
+      font-size: 2.4rem;
+      padding: 0 3.6rem;
     }
     .text {
-      margin: 48px auto;
+      margin: 4.8rem auto;
       width: 85%;
-      max-width: 645px;
-      line-height: 32px;
+      max-width: 64.5rem;
       &.desktop {
         display: none;
       }
@@ -280,7 +309,7 @@
   }
   @media (max-width: 600px) {
     .title {
-      max-width: 250px;
+      max-width: 25rem;
     }
   }
 }
@@ -320,15 +349,17 @@
       max-width: 58rem;
     }
   }
-  @media screen and (max-width: 1000px) {
-    .title {
-      line-height: 32px;
+  @media (max-width: 1000px) {
+    padding-top: 8rem;
+    h2 {
+      font-size: 2.4rem;
+      padding: 0 0.6rem;
     }
     .subtitle {
-      max-width: 645px;
+      max-width: 64.5rem;
     }
   }
-  @media screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     .title {
       max-width: auto;
     }
@@ -567,38 +598,35 @@
       }
     }
   }
-  // @media screen and (max-width: 1366px) {
-  //   // flex-direction: column;
-  //   main {
-  //     // width: 100%;
-  //     .plans-content {
-  //       padding: 52px 24px;
-  //       .price {
-  //         .price-value {
-  //           font-size: 48px;
-  //           strong {
-  //             font-size: 88px;
-  //           }
-  //           .from-text {
-  //             top: -14px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  @media screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 4rem;
     main {
       width: 100%;
       padding: 0;
-      .buttons {
-        height: 60px;
-        button {
-          font-size: 14px;
+      box-shadow: none;
+      .plans-content {
+        #price-container {
+          .price-value {
+            .from-text {
+              left: 0;
+            }
+            #price-value-text {
+              font-size: 6rem;
+              strong {
+                font-size: 10rem;
+              }
+            }
+          }
         }
       }
+      .buttons {
+        height: 6.4rem;
+        button {
+          font-size: 1.4rem;
+        }
+      }
+
     }
     aside {
       width: 100%;
@@ -606,18 +634,17 @@
         display: none;
       }
       .gray-box {
-        top: -4px;
+        top: -0.4rem;
         margin-top: 0;
         border-top-right-radius: 0;
-        padding: 36px 32px;
-        padding-bottom: 48px;
+        padding: 1rem 3.2rem;
+        padding-bottom: 4.8rem;
         h4 {
-          font-size: 18px;
-          max-width: 228px;
-          margin: 0 auto;
+          font-size: 1.8rem;
+          margin: 0;
         }
         #plans-carousel {
-          padding-bottom: 40px;
+          padding-bottom: 4rem;
         }
       }
     }
@@ -699,8 +726,7 @@
     .content {
       flex-direction: column;
       aside {
-        width: 100%;
-        border-radius: 0;
+        width: 90%;
         .aside-text {
           text-align: center;
           .seleted {
