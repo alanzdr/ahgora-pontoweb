@@ -57,6 +57,9 @@
     align-items: flex-end;
     padding-bottom: 8rem;
     .content {
+      h1#hero {
+        font-size: 4.8rem;
+      }
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -142,7 +145,7 @@
 /*
  *
  */
- #content-what-matters {
+#content-what-matters {
   padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;

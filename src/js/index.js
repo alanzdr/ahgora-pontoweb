@@ -277,7 +277,8 @@ function handleWithPlans() {
         hitType: 'event',
         eventCategory: 'hotsite-pme-pontoweb',
         eventAction: 'contact',
-        eventLabel
+        eventLabel,
+        transport: 'beacon'
       });
     }
   }
