@@ -1,9 +1,28 @@
+/*
+ *  MAIN PAGE CSS
+ *
+ *  1. IMPORTS
+ *  2. HERO
+ *  3. MORE THAN
+ *  4. WHAT-MATTERS
+ *  5. PLATFORMS
+ *  6. PLANS
+ *  7. FORM
+ *  8. FOOTER
+ *
+ */
 
+/*
+ *  1. IMPORTS
+ */
 @import 'variables';
 @import 'default';
 @import 'common';
 @import 'tinyslider';
 
+/*
+ *  2. HERO
+ */
 #content-hero {
   position: relative;
   min-height: 100vh;
@@ -68,6 +87,9 @@
   }
 }
 
+/*
+ *  3. MORE THAN
+ */
 #content-more-than {
   // padding: 10rem 0;
   padding-top: 10rem;
@@ -143,7 +165,7 @@
 }
 
 /*
- *
+ *  4. WHAT-MATTERS
  */
 #content-what-matters {
   padding-top: 8rem;
@@ -263,7 +285,7 @@
 }
 
 /*
- *
+ *  5. PLATFORMS
  */
 #content-platforms {
   text-align: center;
@@ -318,7 +340,7 @@
 }
 
 /*
- *
+ *  6. PLANS
  */
 #content-plans {
   padding-top: 12rem;
@@ -502,20 +524,6 @@
           transition: opacity .5s ease-out;
         }
         &.collaborator-mode {
-          .price-value {
-            #price-value-text {
-              strong {
-                margin: 0;
-              }
-              span {
-                align-self: unset;
-                margin-top: 0;
-              }
-            }
-            .mouth-text {
-              opacity: 0;
-            }
-          }
           .per-collaborator {
             opacity: 1;
           }
@@ -655,7 +663,7 @@
 }
 
 /*
- *
+ *  7. FORM
  */
 #content-form {
   padding-top: 9.6rem;
@@ -758,9 +766,6 @@
   }
 }
 
-/*
- *
- */
 #pontoweb-form {
   width: 100%;
   display: flex;
@@ -828,7 +833,7 @@
 }
 
 /*
- *  FOOTER
+ *  8. FOOTER
  */
 footer#page-footer {
   height: 5.5rem;
