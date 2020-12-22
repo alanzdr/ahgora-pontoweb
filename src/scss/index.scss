@@ -15,10 +15,10 @@
 /*
  *  1. IMPORTS
  */
-@import 'variables';
-@import 'default';
-@import 'common';
-@import 'tinyslider';
+@import "variables";
+@import "default";
+@import "common";
+@import "tinyslider";
 
 /*
  *  2. HERO
@@ -66,7 +66,7 @@
       display: flex;
       max-width: 39rem;
       margin-top: 1.6rem;
-      color: #B4CAF2;
+      color: #b4caf2;
     }
     a.btn {
       margin-top: 5.6rem;
@@ -108,7 +108,7 @@
     #clients-carousel {
       .item {
         opacity: 0.4;
-        transition: opacity .3s ease-out;
+        transition: opacity 0.3s ease-out;
         picture {
           display: flex;
           height: 10rem;
@@ -177,8 +177,8 @@
     left: 0;
     width: 100%;
     height: 37rem;
-    background: #141D2E;
-    content: ''; 
+    background: #141d2e;
+    content: "";
     z-index: 0;
   }
   h2 {
@@ -241,7 +241,7 @@
         }
       }
       .line {
-        content: ' ';
+        content: " ";
         width: 90px;
         max-width: 100%;
         height: 1px;
@@ -278,7 +278,7 @@
       flex-direction: column;
       .item {
         width: 100%;
-        margin: 0.5rem 0;  
+        margin: 0.5rem 0;
       }
     }
   }
@@ -351,8 +351,8 @@
     left: 0;
     width: 100%;
     height: 72rem;
-    background: #141D2E;
-    content: ''; 
+    background: #141d2e;
+    content: "";
     z-index: 0;
   }
   header {
@@ -369,7 +369,7 @@
     p {
       margin: 0 auto;
       margin-top: 4rem;
-      color: #B4CAF2;
+      color: #b4caf2;
       width: 90%;
       max-width: 58rem;
     }
@@ -401,7 +401,7 @@
     width: 36%;
     border-radius: 1rem;
     position: relative;
-    box-shadow: 0px 2px 5px 0px rgba(#000 , .1);
+    box-shadow: 0px 2px 5px 0px rgba(#000, 0.1);
     background: #fff;
     z-index: 1;
     overflow: hidden;
@@ -418,16 +418,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid #C1C1C1;
-        background: #DFDFDF;
+        border: 1px solid #c1c1c1;
+        background: #dfdfdf;
         color: #495161;
-        transition: border-color .5s ease-out, color .5s ease-out, background .5s ease-out;
+        transition: border-color 0.5s ease-out, color 0.5s ease-out,
+          background 0.5s ease-out;
         font-size: 1.6rem;
         line-height: 1;
         cursor: pointer;
         &:hover {
-          color:$primary-color;
-          background: #FFDEE8;
+          color: $primary-color;
+          background: #ffdee8;
           border-color: $primary-color;
         }
         &.active {
@@ -457,7 +458,7 @@
           color: $text-color;
           font-size: 1.8rem;
           margin: 0;
-          transition: opacity .5s ease;
+          transition: opacity 0.5s ease;
           &.animate {
             opacity: 0;
           }
@@ -475,7 +476,7 @@
           margin: 0 auto;
           color: $text-color;
           #price-value-text {
-            transition: opacity .5s ease-out;
+            transition: opacity 0.5s ease-out;
             font-size: 7rem;
             display: flex;
             align-items: baseline;
@@ -519,9 +520,9 @@
           font-size: 1.8rem;
           line-height: 1;
           margin-top: -0.4rem;
-          color: #141D2E;
+          color: #141d2e;
           opacity: 0;
-          transition: opacity .5s ease-out;
+          transition: opacity 0.5s ease-out;
         }
         &.collaborator-mode {
           .per-collaborator {
@@ -548,7 +549,7 @@
         width: 1.2rem;
       }
       p {
-        color: #B4CAF2;
+        color: #b4caf2;
         text-align: left;
         max-width: 52rem;
         font-size: 2rem;
@@ -563,7 +564,7 @@
       width: 100%;
       padding: 5rem 9rem;
       border-top-right-radius: 1rem;
-      border-bottom: .5rem solid #D8D8D8;
+      border-bottom: 0.5rem solid #d8d8d8;
       h4 {
         font-size: 1.6rem;
         color: $primary-color;
@@ -589,7 +590,7 @@
                 margin-left: 2.4rem;
                 max-width: 44rem;
                 line-height: 1.2;
-                color: #141D2E;
+                color: #141d2e;
               }
             }
           }
@@ -603,7 +604,7 @@
         height: 0.5rem;
         background: $primary-color;
         position: absolute;
-        content: ' ';
+        content: " ";
         bottom: -0.5rem;
         left: 0;
       }
@@ -637,7 +638,6 @@
           font-size: 1.4rem;
         }
       }
-
     }
     aside {
       width: 100%;
@@ -667,7 +667,7 @@
  */
 #content-form {
   padding-top: 9.6rem;
-  padding-bottom: 10.4rem; 
+  padding-bottom: 10.4rem;
   .content {
     display: flex;
     flex-direction: row;
@@ -692,7 +692,7 @@
             line-height: 1.5;
             #aside-text-number {
               opacity: 1;
-              transition: opacity .5s ease;
+              transition: opacity 0.5s ease;
               &.animate {
                 opacity: 0;
               }
@@ -713,9 +713,9 @@
             cursor: pointer;
             opacity: 1;
             font-weight: bold;
-            transition: opacity .5s ease;
+            transition: opacity 0.5s ease;
             &:hover {
-              opacity: .8;
+              opacity: 0.8;
             }
           }
         }
@@ -727,12 +727,12 @@
       padding: 3.2rem;
       background: #fff;
       border-radius: 0.8rem;
-      box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
       margin: 0 auto;
     }
   }
   @media screen and (max-width: 1000px) {
-    padding-bottom: 2rem; 
+    padding-bottom: 2rem;
     width: 100%;
     .content {
       flex-direction: column;
@@ -779,7 +779,8 @@
       font-size: 1.6rem;
       color: #12161f;
     }
-    input, select {
+    input,
+    select {
       background: #e9e7d9;
       border-radius: 0.6rem;
       border: none;
@@ -799,10 +800,10 @@
       width: 0px;
       height: 0px;
       margin-left: 0px;
-      transition: all .3s;
+      transition: all 0.3s;
     }
     .spinner:before {
-      content: '';
+      content: "";
       box-sizing: border-box;
       position: absolute;
       top: 0;
@@ -812,9 +813,9 @@
       border: 2px solid transparent;
       border-radius: 50%;
       animation: spinner 1s linear infinite;
-      transition: border-top-color .3s;
+      transition: border-top-color 0.3s;
     }
-    &:disabled {
+    &.sending {
       .spinner {
         width: 1.6rem;
         height: 1.6rem;
@@ -825,7 +826,7 @@
       }
     }
   }
-  @media screen and (max-width: 1000px) { 
+  @media screen and (max-width: 1000px) {
     p {
       font-size: 1.2rem;
     }
@@ -848,7 +849,7 @@ footer#page-footer {
     a {
       font-weight: bold;
       color: #707070;
-      transition: color .5s ease;
+      transition: color 0.5s ease;
       &:hover {
         color: $primary-color;
       }

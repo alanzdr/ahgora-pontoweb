@@ -264,7 +264,9 @@ function handleWithPlans() {
   }
 
   function unviableForm() {
-    form.querySelector('button').setAttribute('disabled', true);
+    const button = form.querySelector('button');
+    button.setAttribute('disabled', true);
+    button.classList.add('sending')
   } 
 
   function sendDataEvents() {
