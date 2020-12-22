@@ -47,7 +47,7 @@ function handleWithPlans() {
   const planButton = document.getElementById('plan-button');
   const form = document.getElementById('pontoweb-form');
   const formContainer = document.getElementById('content-form');
-  const selectField = document.getElementById('employers');
+  const selectField = document.getElementById('input-employers');
   const params = getSearchParams();
   
   buttons.forEach((val, i) => {
